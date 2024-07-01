@@ -16,7 +16,7 @@ spec:
       - name: my-app
         image: utsab12312/app:1.0
         imagePullPolicy: Always
-        env:
+        env:s
         - name: DB_USERNAME
           valueFrom:
             secretKeyRef:

@@ -31,7 +31,7 @@ jobs:
           push: true
           tags: |
             utsab12312/app:1.0
-            utsab12312/app:1.0:sha-${{ env.sha_short }}
+            utsab12312/app:sha-${{ env.sha_short }}
           labels: |
             org.opencontainers.image.source=${{ github.repository }}
             org.opencontainers.image.revision=${{ github.sha }}
