@@ -65,5 +65,7 @@ jobs:
           git commit -s -m "[skip ci] Generate deployment manifests"
 
       - name: Push deploy manifests to remote repo
-        run: |
-          git push -u git@github.com:utsab818/MajorProject.git main
+        uses: ad-m/github-push-action@v0.6.0
+        with: 
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: main
